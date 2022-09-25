@@ -8,20 +8,20 @@ Homepage: https://rustdesk.com/
 
 Package: rustdesk-server-hbbs
 Architecture: {{ ARCH }}
-Depends: systemd ${misc:Depends}
+Depends: systemd, ${misc:Depends}, ${shlibs:Depends}
 Description: RustDesk server
  Self-host your own RustDesk server, it is free and open source.
 
 Package: rustdesk-server-hbbr
 Architecture: {{ ARCH }}
-Depends: systemd ${misc:Depends}
+Depends: systemd, ${misc:Depends}, ${shlibs:Depends}
 Description: RustDesk server
  Self-host your own RustDesk server, it is free and open source.
  This package contains the RustDesk relay server.
 
 Package: rustdesk-server-utils
 Architecture: {{ ARCH }}
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
 Description: RustDesk server
  Self-host your own RustDesk server, it is free and open source.
  This package contains the rustdesk-utils binary.
